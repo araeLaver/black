@@ -1,241 +1,246 @@
-# 🤖 FREEAI Token - Free AI for Everyone
+# 🤖 FREEAI 토큰 - 모든 사람을 위한 무료 AI
 
-[![BSC Network](https://img.shields.io/badge/BSC-Network-yellow)](https://bscscan.com)
+[![BSC 네트워크](https://img.shields.io/badge/BSC-Network-yellow)](https://bscscan.com)
 [![Solidity](https://img.shields.io/badge/Solidity-0.8.19-blue)](https://soliditylang.org)
-[![License](https://img.shields.io/badge/License-MIT-green)](LICENSE)
-[![Tests](https://img.shields.io/badge/Tests-21%2F21-brightgreen)](test/)
+[![라이선스](https://img.shields.io/badge/License-MIT-green)](LICENSE)
+[![테스트](https://img.shields.io/badge/Tests-21%2F21-brightgreen)](test/)
 
-## 🌟 Vision
+## 🌟 비전
 
 **"AI가 무료가 되는 그날까지"** - FREEAI는 모든 사람이 무료로 AI를 사용할 수 있는 세상을 만들기 위한 토큰입니다.
 
-## 🎯 Project Overview
+## 🎯 프로젝트 소개
 
-FREEAI는 제로 예산으로 시작된 실험적 암호화폐 프로젝트입니다. 커뮤니티 중심의 공정한 분배와 실제 AI 유틸리티를 목표로 합니다.
+FREEAI는 **제로 예산(최대 $3)**으로 시작된 실험적 암호화폐 프로젝트입니다. 커뮤니티 중심의 공정한 분배와 실제 AI 유틸리티를 목표로 합니다.
 
-### 핵심 특징
-- 🎁 **70% 에어드롭** - 공정한 커뮤니티 분배
-- 🔥 **자동 소각** - 모든 거래의 0.5% 디플레이션
-- ⚡ **저렴한 수수료** - BSC 네트워크 기반
-- 🤖 **AI 유틸리티** - 향후 AI 서비스 연동 계획
-- 🔒 **완전 투명** - 오픈소스 & 검증된 계약
+### 🌟 핵심 특징
+- 🎁 **70% 에어드롭** - 공정한 커뮤니티 분배 (업계 최고 수준)
+- 🔥 **자동 소각 시스템** - 모든 거래의 0.5% 디플레이션 (희소성 증가)
+- ⚡ **저렴한 수수료** - BSC 네트워크 기반 (가스비 $0.1 이하)
+- 🤖 **AI 유틸리티** - 향후 AI 서비스 결제 토큰으로 활용
+- 🔒 **완전 투명성** - 오픈소스 & 검증된 스마트 컨트랙트
 
-## 📊 Tokenomics
+## 📊 토크노믹스 (토큰 경제학)
 
+### 💰 토큰 정보
+- **토큰명**: Free AI Token (FREEAI)
+- **총 공급량**: 1,000,000,000 FREEAI (10억개)
+- **네트워크**: BNB Smart Chain (BSC)
+- **표준**: BEP-20 (ERC-20 호환)
+
+### 📈 분배 구조
 ```
-총 공급량: 1,000,000,000 FREEAI
-
-분배:
 🎁 에어드롭:    70% (700,000,000) - 커뮤니티 무료 분배
-💧 유동성 풀:   20% (200,000,000) - DEX 상장용
-🛠️ 개발팀:     5%  (50,000,000)  - 1년 락업
-📢 마케팅:     5%  (50,000,000)  - 이벤트 & 보상
-
-수수료 구조:
-• 거래 시 1% 수수료
-• 0.5% → 자동 소각 🔥
-• 0.5% → 개발 지갑
+💧 유동성 풀:   20% (200,000,000) - DEX 상장 및 거래용
+🛠️ 개발팀:     5%  (50,000,000)  - 1년 락업 (덤핑 방지)
+📢 마케팅:     5%  (50,000,000)  - 이벤트 & 보상 & 파트너십
 ```
 
-## 🚀 Quick Start
+### 💸 수수료 시스템
+- **거래 수수료**: 1% (업계 평균 대비 낮음)
+- **자동 소각**: 0.5% → 영구 제거 🔥 (디플레이션)
+- **개발 기금**: 0.5% → 지속적인 개발 자금
 
-### Prerequisites
-- Node.js v16+
-- npm or yarn
-- MetaMask wallet
-- BNB for gas fees (~$3)
+## 🚀 빠른 시작 가이드
 
-### Installation
+### 📋 필요 사항
+- Node.js v16 이상
+- npm 또는 yarn
+- 메타마스크 지갑
+- 배포용 BNB (~$3)
+
+### 💻 설치 방법
 
 ```bash
-# Clone the repository
-git clone https://github.com/your-username/freeai-token.git
-cd freeai-token
+# 리포지토리 다운로드
+git clone https://github.com/araeLaver/black.git
+cd black
 
-# Install dependencies
+# 패키지 설치
 npm install
 
-# Set up environment variables
+# 환경변수 설정
 cp .env.example .env
-# Edit .env with your private key and settings
+# .env 파일에 프라이빗 키와 설정 입력
 
-# Compile contracts
+# 스마트 컨트랙트 컴파일
 npx hardhat compile
 
-# Run tests
+# 테스트 실행 (21/21 통과 확인)
 npx hardhat test
 ```
 
-### Deployment
+### 🌐 배포 방법
 
 ```bash
-# Deploy to BSC Testnet (free)
+# BSC 테스트넷 배포 (무료)
 npm run deploy:testnet
 
-# Deploy to BSC Mainnet (~$3 gas cost)
+# BSC 메인넷 배포 (가스비 ~$3)
 npm run deploy:mainnet
 
-# Verify contract
+# 컨트랙트 검증 (BSCScan에서 확인 가능)
 npx hardhat verify --network bsc CONTRACT_ADDRESS DEV_WALLET_ADDRESS
 ```
 
-## 📋 Contract Details
+## 📋 스마트 컨트랙트 상세 정보
 
-- **Network**: BNB Smart Chain (BSC)
-- **Token Standard**: BEP-20 (ERC-20 compatible)
-- **Contract Name**: FreeAIToken
-- **Symbol**: FREEAI
-- **Decimals**: 18
-- **Total Supply**: 1,000,000,000
+### 🔗 기본 정보
+- **네트워크**: BNB Smart Chain (BSC)
+- **토큰 표준**: BEP-20 (ERC-20 호환)
+- **컨트랙트명**: FreeAIToken
+- **심볼**: FREEAI
+- **소수점**: 18자리
+- **총 공급량**: 1,000,000,000 (10억개)
 
-### Security Features
-- ✅ OpenZeppelin based
-- ✅ Reentrancy protection
-- ✅ Ownership controls
-- ✅ Anti-whale limits
-- ✅ Emergency pause capability
-- ✅ Automatic liquidity locks
+### 🛡️ 보안 기능
+- ✅ **OpenZeppelin 기반** - 업계 표준 보안 라이브러리
+- ✅ **재진입 공격 방지** - ReentrancyGuard 적용
+- ✅ **소유권 관리** - Ownable 패턴
+- ✅ **안티 웨일 보호** - 최대 거래량/보유량 제한
+- ✅ **긴급 정지 기능** - 문제 발생시 거래 일시중지
+- ✅ **자동 유동성 락** - 러그풀 방지
 
-## 🎁 Airdrop Information
+## 🎁 에어드롭 정보
 
-### How to Participate
-1. Join our [Telegram Group](https://t.me/FREEAIToken)
-2. Follow the airdrop instructions
-3. Submit your BSC wallet address
-4. Receive 70,000 FREEAI tokens!
+### 📝 참여 방법
+1. [텔레그램 그룹](https://t.me/FREEAIToken) 가입
+2. 에어드롭 안내 메시지 확인
+3. BSC 지갑 주소 제출
+4. 70,000 FREEAI 토큰 무료 수령!
 
-### Airdrop Stats
-- **Allocation**: 700,000,000 FREEAI (70%)
-- **Per Person**: 70,000 FREEAI
-- **Target**: 10,000 participants
-- **Status**: 🔄 In Progress
+### 📊 에어드롭 현황
+- **할당량**: 700,000,000 FREEAI (전체의 70%)
+- **1인당 지급**: 70,000 FREEAI
+- **목표 참여자**: 10,000명
+- **현재 상태**: 🔄 준비 중 (개발 완료)
 
-## 🛣️ Roadmap
+## 🛣️ 로드맵 (개발 계획)
 
-### Phase 1: Launch ✅
-- [x] Smart contract development
-- [x] Security testing (21/21 tests passed)
-- [x] Website creation
-- [x] Community building
-- [x] Mainnet deployment
+### 1단계: 런칭 ✅ (완료)
+- [x] 스마트 컨트랙트 개발
+- [x] 보안 테스트 (21/21 통과)
+- [x] 웹사이트 제작
+- [x] 커뮤니티 구축 준비
+- [x] 메인넷 배포 준비 완료
 
-### Phase 2: Growth 🔄
-- [ ] Massive airdrop execution
-- [ ] PancakeSwap listing
-- [ ] CoinGecko/CMC listing
-- [ ] Influencer partnerships
+### 2단계: 성장 🔄 (다음 단계)
+- [ ] 대규모 에어드롭 실행
+- [ ] PancakeSwap 상장
+- [ ] CoinGecko/CMC 등록
+- [ ] 인플루언서 파트너십
 
-### Phase 3: Utility 🔮
-- [ ] AI service platform beta
-- [ ] Staking rewards system
-- [ ] Cross-chain bridge
-- [ ] Mobile app development
+### 3단계: 실용성 🔮 (3-6개월)
+- [ ] AI 서비스 플랫폼 베타 버전
+- [ ] 스테이킹 보상 시스템
+- [ ] 크로스체인 브릿지
+- [ ] 모바일 앱 개발
 
-### Phase 4: Expansion 🌍
-- [ ] Major exchange listings
-- [ ] Strategic partnerships
-- [ ] AI marketplace launch
-- [ ] Global adoption
+### 4단계: 확장 🌍 (6개월+)
+- [ ] 주요 거래소 상장
+- [ ] 전략적 파트너십
+- [ ] AI 마켓플레이스 런칭
+- [ ] 글로벌 확산
 
-## 💻 Tech Stack
+## 💻 기술 스택
 
-- **Smart Contracts**: Solidity 0.8.19
-- **Framework**: Hardhat
-- **Standards**: OpenZeppelin
-- **Testing**: Mocha/Chai
-- **Frontend**: HTML/CSS/JavaScript
-- **Deployment**: BSC Network
+- **스마트 컨트랙트**: Solidity 0.8.19
+- **개발 프레임워크**: Hardhat
+- **보안 표준**: OpenZeppelin
+- **테스트**: Mocha/Chai
+- **프론트엔드**: HTML/CSS/JavaScript (반응형)
+- **배포 네트워크**: BSC (BNB Smart Chain)
 
-## 🧪 Testing
+## 🧪 테스트 결과
 
-All core functionality is thoroughly tested:
+모든 핵심 기능이 철저히 테스트되었습니다:
 
 ```bash
 npx hardhat test
 ```
 
-**Test Results**: ✅ 21/21 tests passing
-- Token deployment & initialization
-- Trading controls & fees
-- Airdrop functionality
-- Anti-whale mechanisms
-- Admin functions
-- Security features
+**테스트 결과**: ✅ **21/21 모두 통과**
+- ✅ 토큰 배포 및 초기화
+- ✅ 거래 제어 및 수수료 시스템
+- ✅ 에어드롭 기능
+- ✅ 안티 웨일 보호 메커니즘
+- ✅ 관리자 기능
+- ✅ 보안 기능
 
-## 📈 Community
+## 📈 커뮤니티 & 링크
 
-- 🌐 **Website**: [Coming Soon]
-- 📱 **Telegram**: [Coming Soon]
-- 🐦 **Twitter**: @FREEAIToken
-- 💻 **GitHub**: [This Repository]
-- 📊 **Chart**: [After DEX listing]
+- 🌐 **웹사이트**: [준비 중]
+- 📱 **텔레그램**: [준비 중] 
+- 🐦 **트위터**: @FREEAIToken
+- 💻 **GitHub**: https://github.com/araeLaver/black
+- 📊 **차트**: [DEX 상장 후]
 
-## ⚠️ Disclaimers
+## ⚠️ 중요 공지사항
 
-### Investment Warning
-- FREEAI is an experimental project
-- Cryptocurrency investments carry high risk
-- Only invest what you can afford to lose
-- Always do your own research (DYOR)
+### 🚨 투자 경고
+- FREEAI는 **실험적 프로젝트**입니다
+- 암호화폐 투자는 **고위험**을 동반합니다
+- **감당할 수 있는 범위 내에서만** 투자하세요
+- 투자 전 **반드시 본인이 직접 조사(DYOR)** 하세요
 
-### Project Status
-- This is a zero-budget experiment
-- No guarantee of future development
-- Community-driven project
-- Open-source and transparent
+### 📋 프로젝트 현황
+- **제로예산 실험 프로젝트** (최대 $3 투자)
+- 향후 개발 보장 없음 (커뮤니티 의존적)
+- **완전한 오픈소스** 및 투명성
+- **커뮤니티 중심** 프로젝트
 
-## 🤝 Contributing
+## 🤝 기여하기 (Contributing)
 
-We welcome contributions! Here's how you can help:
+기여를 환영합니다! 다음과 같이 도움을 주실 수 있습니다:
 
-1. **Code**: Submit PRs for improvements
-2. **Testing**: Report bugs and issues
-3. **Community**: Join our social channels
-4. **Ideas**: Suggest new features
-5. **Marketing**: Spread the word!
+1. **💻 코드**: 개선사항 Pull Request 제출
+2. **🐛 테스트**: 버그 리포트 및 이슈 제기
+3. **👥 커뮤니티**: 소셜 채널 참여 및 활동
+4. **💡 아이디어**: 새로운 기능 제안
+5. **📢 마케팅**: 프로젝트 홍보 및 공유!
 
-### Development Setup
+### 🛠️ 개발 환경 설정
 ```bash
-git clone https://github.com/your-username/freeai-token.git
-cd freeai-token
+git clone https://github.com/araeLaver/black.git
+cd black
 npm install
 npm test
 ```
 
-## 📄 License
+## 📄 라이선스
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+이 프로젝트는 MIT 라이선스 하에 배포됩니다 - [LICENSE](LICENSE) 파일 참조.
 
-## 🏆 Acknowledgments
+## 🏆 감사의 말
 
-- OpenZeppelin for secure contract templates
-- Hardhat team for excellent dev tools
-- BSC for affordable blockchain infrastructure
-- Community members for support and feedback
+- **OpenZeppelin** - 보안 컨트랙트 템플릿 제공
+- **Hardhat 팀** - 우수한 개발 도구
+- **BSC** - 저렴한 블록체인 인프라
+- **커뮤니티 멤버** - 지원과 피드백
 
-## 📞 Support
+## 📞 지원 & 문의
 
-Need help? Here are your options:
+도움이 필요하신가요? 다음 방법을 이용하세요:
 
-1. **Technical Issues**: Open a GitHub issue
-2. **General Questions**: Ask in Telegram group
-3. **Security Concerns**: Contact admins directly
-4. **Partnership**: Reach out via email
-
----
-
-## 🎯 Quick Links
-
-| Resource | Link |
-|----------|------|
-| 🔗 Contract | [BSCScan](https://bscscan.com/token/CONTRACT_ADDRESS) |
-| 🌐 Website | [freeai.com](https://your-domain.com) |
-| 📱 Telegram | [Join Group](https://t.me/FREEAIToken) |
-| 📊 Chart | [PancakeSwap](https://pancakeswap.finance/swap) |
-| 📋 Audit | [Coming Soon] |
+1. **🔧 기술적 문제**: GitHub Issue 생성
+2. **💬 일반 질문**: 텔레그램 그룹 문의  
+3. **🚨 보안 문제**: 관리자 직접 연락
+4. **🤝 파트너십**: 이메일 문의
 
 ---
 
-**Built with ❤️ by the FREEAI Community**
+## 🎯 빠른 링크
 
-*Remember: This is an experimental project. Always DYOR and invest responsibly!*
+| 리소스 | 링크 |
+|--------|------|
+| 🔗 컨트랙트 | [BSCScan](https://bscscan.com/token/CONTRACT_ADDRESS) |
+| 🌐 웹사이트 | [준비 중] |
+| 📱 텔레그램 | [Join Group](https://t.me/FREEAIToken) |
+| 📊 차트 | [PancakeSwap](https://pancakeswap.finance/swap) |
+| 📋 감사 | [준비 중] |
+
+---
+
+**❤️ FREEAI 커뮤니티가 함께 만들어갑니다**
+
+*기억하세요: 이것은 실험적 프로젝트입니다. 항상 DYOR하고 책임감 있게 투자하세요!*
