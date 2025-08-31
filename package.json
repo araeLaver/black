@@ -1,0 +1,32 @@
+{
+  "name": "freeai-token",
+  "version": "1.0.0",
+  "description": "Free AI Token - Zero Budget Cryptocurrency Project",
+  "main": "index.js",
+  "scripts": {
+    "compile": "hardhat compile",
+    "test": "hardhat test",
+    "deploy:testnet": "hardhat run deployment/deploy-script.js --network bscTestnet",
+    "deploy:mainnet": "hardhat run deployment/deploy-script.js --network bsc",
+    "verify": "hardhat verify --network bsc",
+    "node": "hardhat node"
+  },
+  "keywords": [
+    "cryptocurrency",
+    "token",
+    "bsc",
+    "defi",
+    "ai",
+    "free"
+  ],
+  "author": "FREEAI Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^2.0.0",
+    "hardhat": "^2.19.0"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.0",
+    "dotenv": "^16.0.0"
+  }
+}

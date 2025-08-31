@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FREEAI Token - AI가 무료가 되는 그날까지</title>
+    <meta name="description" content="FREEAI는 모든 사람이 무료로 AI를 사용할 수 있는 세상을 만들기 위한 토큰입니다.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="FREEAI Token - Free AI for Everyone">
+    <meta property="og:description" content="AI가 무료가 되는 그날까지. 70% 에어드롭 진행중!">
+    <meta property="og:image" content="https://your-domain.github.io/freeai/logo.png">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            opacity: 0.9;
+            margin-bottom: 30px;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 60px 0;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto 40px;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+        
+        .btn {
+            padding: 15px 30px;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #FFD700, #FFA500);
+            color: #333;
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+        
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            padding: 60px 0;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #FFD700;
+            margin-bottom: 10px;
+        }
+        
+        .features {
+            padding: 60px 0;
+        }
+        
+        .features h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+        }
+        
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        
+        .tokenomics {
+            padding: 60px 0;
+            text-align: center;
+        }
+        
+        .tokenomics h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+        }
+        
+        .tokenomics-chart {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 40px;
+            border-radius: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .roadmap {
+            padding: 60px 0;
+        }
+        
+        .roadmap h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+        }
+        
+        .roadmap-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 15px;
+        }
+        
+        .roadmap-phase {
+            background: #FFD700;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-right: 20px;
+            min-width: 100px;
+            text-align: center;
+        }
+        
+        footer {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .social-links a {
+            color: white;
+            font-size: 2rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: #FFD700;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        .contract-info {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px;
+            border-radius: 15px;
+            margin: 30px 0;
+            text-align: center;
+        }
+        
+        .contract-address {
+            font-family: monospace;
+            background: rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 10px;
+            margin: 10px 0;
+            word-break: break-all;
+        }
+        
+        .warning {
+            background: rgba(255, 193, 7, 0.2);
+            border: 2px solid #FFC107;
+            padding: 20px;
+            border-radius: 15px;
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">🤖 FREEAI</div>
+            <div class="tagline">AI가 무료가 되는 그날까지</div>
+        </header>
+        
+        <section class="hero">
+            <h1>Free AI for Everyone</h1>
+            <p>모든 사람이 무료로 AI를 사용할 수 있는 세상을 만들어갑니다. FREEAI 토큰과 함께 AI 혁명에 참여하세요!</p>
+            
+            <div class="cta-buttons">
+                <a href="#airdrop" class="btn btn-primary">🎁 무료 에어드롭 참여</a>
+                <a href="#tokenomics" class="btn btn-secondary">📊 토크노믹스 보기</a>
+            </div>
+            
+            <div class="contract-info">
+                <h3>🔒 컨트랙트 주소</h3>
+                <div class="contract-address" id="contractAddress">
+                    배포 후 업데이트 예정
+                </div>
+                <p>BSC 네트워크 | BEP-20 토큰</p>
+            </div>
+        </section>
+        
+        <section class="stats">
+            <div class="stat-card">
+                <div class="stat-number">1B</div>
+                <div>총 토큰 공급량</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">70%</div>
+                <div>에어드롭 비율</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">1%</div>
+                <div>거래 수수료</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">0.5%</div>
+                <div>자동 소각</div>
+            </div>
+        </section>
+        
+        <section class="features">
+            <h2>✨ 핵심 기능</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎁</div>
+                    <h3>대규모 에어드롭</h3>
+                    <p>총 공급량의 70%를 커뮤니티에 무료 배포합니다. 공정한 분배를 통해 모든 사람이 참여할 수 있습니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔥</div>
+                    <h3>자동 디플레이션</h3>
+                    <p>모든 거래의 0.5%가 자동으로 소각되어 토큰 공급량이 지속적으로 감소합니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>AI 유틸리티</h3>
+                    <p>향후 FREEAI 토큰으로 다양한 AI 서비스를 무료 또는 할인된 가격에 이용할 수 있습니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🏛️</div>
+                    <h3>커뮤니티 거버넌스</h3>
+                    <p>토큰 홀더들이 프로젝트의 미래 방향을 결정하는 투표권을 가집니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>저렴한 수수료</h3>
+                    <p>BSC 네트워크 기반으로 빠르고 저렴한 거래가 가능합니다.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3>보안 & 투명성</h3>
+                    <p>OpenZeppelin 기반의 검증된 스마트 컨트랙트와 완전한 투명성을 제공합니다.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="tokenomics" id="tokenomics">
+            <h2>📊 토크노믹스</h2>
+            <div class="tokenomics-chart">
+                <h3>총 공급량: 1,000,000,000 FREEAI</h3>
+                <br>
+                <div style="text-align: left; max-width: 400px; margin: 0 auto;">
+                    <p>🎁 에어드롭: 70% (700M)</p>
+                    <p>💧 유동성 풀: 20% (200M)</p>
+                    <p>🛠️ 개발팀: 5% (50M) - 1년 락업</p>
+                    <p>📢 마케팅: 5% (50M)</p>
+                </div>
+                <br>
+                <p><strong>수수료 구조:</strong></p>
+                <p>거래 시 1% 수수료 → 0.5% 소각 + 0.5% 개발</p>
+            </div>
+        </section>
+        
+        <section class="roadmap">
+            <h2>🗺️ 로드맵</h2>
+            <div class="roadmap-item">
+                <div class="roadmap-phase">Phase 1</div>
+                <div>
+                    <h3>토큰 런칭 & 에어드롭</h3>
+                    <p>스마트 컨트랙트 배포, 커뮤니티 구축, 대규모 에어드롭 진행</p>
+                </div>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-phase">Phase 2</div>
+                <div>
+                    <h3>DEX 상장 & 유동성</h3>
+                    <p>PancakeSwap 상장, 초기 유동성 제공, CoinGecko/CMC 등록</p>
+                </div>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-phase">Phase 3</div>
+                <div>
+                    <h3>AI 서비스 개발</h3>
+                    <p>이미지 생성, 텍스트 생성 등 실제 AI 서비스 플랫폼 개발</p>
+                </div>
+            </div>
+            <div class="roadmap-item">
+                <div class="roadmap-phase">Phase 4</div>
+                <div>
+                    <h3>생태계 확장</h3>
+                    <p>파트너십, CEX 상장, 추가 AI 기능, 스테이킹 플랫폼</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="airdrop" class="warning">
+            <h2>🎁 에어드롭 안내</h2>
+            <p><strong>에어드롭 진행중!</strong></p>
+            <p>텔레그램 그룹 참여 → 지갑 주소 등록 → 무료 토큰 받기</p>
+            <br>
+            <a href="#" class="btn btn-primary">텔레그램 참여하기</a>
+        </section>
+        
+        <div class="warning">
+            <h3>⚠️ 투자 주의사항</h3>
+            <p>FREEAI는 실험적인 프로젝트입니다. 암호화폐 투자는 고위험을 수반하며, 투자 손실 가능성이 있습니다. 투자 전 충분한 검토를 하시고, 감당할 수 있는 범위 내에서만 투자하세요.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="#" title="Telegram">📱</a>
+                <a href="#" title="Twitter">🐦</a>
+                <a href="#" title="GitHub">💻</a>
+            </div>
+            <p>&copy; 2025 FREEAI Token. 오픈소스 프로젝트입니다.</p>
+            <p>BSC Network | BEP-20 Token</p>
+        </div>
+    </footer>
+    
+    <script>
+        // 컨트랙트 주소 업데이트 (배포 후)
+        // document.getElementById('contractAddress').textContent = '0x...';
+        
+        // 부드러운 스크롤
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>

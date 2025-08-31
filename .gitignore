@@ -1,0 +1,70 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Hardhat files
+cache/
+artifacts/
+typechain-types/
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Hardhat network files
+.openzeppelin/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Build artifacts
+dist/
+build/
+
+# Deployment info (keep local only)
+deployments/
+deployed-addresses.json
+
+# Sensitive files
+private-keys.txt
+seed-phrase.txt
+wallet-backup.json
+
+# Airdrop data (keep private)
+airdrop-recipients.json
+recipients*.txt
+failed_batch_*.json
+
+# Test files
+.coverage_*
+coverage.json
